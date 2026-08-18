@@ -20,5 +20,13 @@ def tickets():
         ]
     }
 
+@app.route("/sobre")
+def sobre():
+    return {
+        "nome": "opstrack-api",
+        "descricao": "API para acompanhamento e gerenciamento de tickets de suporte",
+        "versao": "1.0.0"
+    }
+
 if __name__ == "__main__":
     app.run(debug=True)
